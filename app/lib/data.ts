@@ -15,8 +15,7 @@ export async function fetchRevenue() {
   noStore();
 
   try {
-    // Artificially delay a response for demo purposes.
-    // Don't do this in production :)
+    // Artificially delay a response for demo purposes
     //console.log('Fetching revenue data...');
     //await new Promise((resolve) => setTimeout(resolve, 3000));
 
@@ -56,8 +55,6 @@ export async function fetchCardData() {
   noStore();
   try {
     // You can probably combine these into a single SQL query
-    // However, we are intentionally splitting them to demonstrate
-    // how to initialize multiple queries in parallel with JS.
     const invoiceCountPromise = sql`SELECT COUNT(*) FROM invoices`;
     const customerCountPromise = sql`SELECT COUNT(*) FROM customers`;
     const invoiceStatusPromise = sql`SELECT
