@@ -126,3 +126,11 @@ export async function authenticate(
         throw error;
     }
 }
+//placeholder for the registration functionality
+export const register = async (formData: any) => {
+    return new Promise<void>((resolve) => {
+        setTimeout(() => {
+            resolve();
+        }, 1000);
+    });
+};
