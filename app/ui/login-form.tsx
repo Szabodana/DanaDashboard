@@ -10,6 +10,7 @@ import {ArrowRightIcon} from '@heroicons/react/20/solid';
 import {Button} from './button';
 import {useFormState, useFormStatus} from 'react-dom';
 import {authenticate} from '@/app/lib/actions';
+import Link from 'next/link';
 
 export default function LoginForm() {
     const [errorMessage, dispatch] = useFormState(authenticate, undefined);
@@ -63,6 +64,15 @@ export default function LoginForm() {
                     </div>
                 </div>
                 <LoginButton/>
+
+                <div className="mt-4">
+                    <Link href="/">
+                        <p className="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Go back
+                        </p>
+                    </Link>
+                </div>
+
                 <div
                     className="flex h-8 items-end space-x-1"
                     aria-live="polite"
