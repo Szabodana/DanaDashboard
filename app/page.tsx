@@ -26,23 +26,23 @@ export default function Page() {
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
         </div>
-        {/*<div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
+        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           <Image
-              src="/hero-desktop.png"
-              width={1000}
-              height={760}
-              className="hidden md:block"
-              alt="Screenshots of the dashboard project showing desktop version"
-          />
-          <Image
-              src="/hero-mobile.png"
+              src="/money.png"
               width={560}
               height={620}
               className="hidden md:block"
-              alt="Screenshots of the dashboard project showing mobile version"
+              alt="just a fun icon"
+          />
+          <Image
+              src="/money-two.png"
+              width={560}
+              height={620}
+              className="hidden md:block"
+              alt="just a fun icon, times two"
           />
 
-        </div>*/}
+        </div>
       </div>
     </main>
   );
